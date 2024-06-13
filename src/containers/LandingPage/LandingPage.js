@@ -17,7 +17,7 @@ const PageBuilder = loadable(() =>
 
 export const LandingPageComponent = props => {
   const { pageAssetsData, inProgress, error } = props;
-
+console.log('first')
   return (
     <PageBuilder
       pageAssetsData={pageAssetsData?.[camelize(ASSET_NAME)]?.data}
